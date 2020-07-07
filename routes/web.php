@@ -18,3 +18,11 @@ Route::get('/', function () {
 });
 
 Route::get('getAllProjects', 'ProjectController@getAllProjects');
+
+Route::get('insertNewProject', 'ProjectController@insertProject');
+
+Route::get('insertNewCity', 'ProjectController@insertCity');
+
+Route::get('insertNewCompany', 'ProjectController@insertCompany');
+
+Route::get('insertNewUser', 'ProjectController@insertUser');
