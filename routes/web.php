@@ -26,3 +26,7 @@ Route::get('insertNewCity', 'ProjectController@insertCity');
 Route::get('insertNewCompany', 'ProjectController@insertCompany');
 
 Route::get('insertNewUser', 'ProjectController@insertUser');
+
+Route::get('updateProject', 'ProjectController@updateProject');
+
+Route::get('updateProject2', 'ProjectController@updateProject2');

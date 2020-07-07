@@ -52,6 +52,20 @@ class ProjectController extends Controller
         return "New User saved";
     }
 
+    public function updateProject() {
+        $project = Project::find(2);
+        $project->name = 'Proyecto de tecnología';
+        $project->save();
+    
+        return "Actualizado";
+    }
+
+    public function updateProject2() {
+        Project::where('is_active', 1)->where('name', 'Proyecto de tecnología')->update(['execution_date' => '2020-07-06']);
+
+        return "Updated the execution date";
+    }
+
     //cuando la información viene de un registro o fuente externa.
 
    /*  public function insertProject(Request $request) {
